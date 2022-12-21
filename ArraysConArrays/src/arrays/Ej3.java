@@ -16,16 +16,20 @@ public class Ej3 {
 		
 		System.out.println("Por favor introduzca 20 numeros separados por enter: ");
 		
-		for(int i =0; i<9; i++) {
+		for(int i =0; i<10; i++) {
 			numUser = lee.nextInt();
 			tabla[i]= numUser;
 		}
-		for(int i=10; i<=20;i++) {
+		for(int i=0; i<10;i++) {
 			numUser = lee.nextInt();
 			tabla2[i]=numUser;
 		}
 	System.out.println(Arrays.toString(tabla));
 	System.out.println(Arrays.toString(tabla2));
+	System.out.println("Las tablas son iguales: " + Arrays.equals(tabla, tabla2));
+	
+	//cerramos el scanner
+	lee.close();
 	}
 
 }
