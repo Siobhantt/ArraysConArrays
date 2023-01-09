@@ -19,12 +19,12 @@ public class Ej6 {
 		Scanner lee = new Scanner(System.in);
 		for (int i = 0; i < aleatorio.length; i++) {
 
-			aleatorio[i] = (int) Math.random() * 100;
+			aleatorio[i] = (int) (Math.random() * 100);
 		}
 		System.out.println("Por favor introduzca un valor: ");
 		valorUser = lee.nextInt();
 
-		while (valorUser != aleatorio[indiceBusqueda] && indiceBusqueda < aleatorio.length) {
+		while (indiceBusqueda < aleatorio.length && valorUser != aleatorio[indiceBusqueda]) {
 			indiceBusqueda++;
 		}
 		if (indiceBusqueda < aleatorio.length) {
